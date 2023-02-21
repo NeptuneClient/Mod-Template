@@ -12,7 +12,7 @@ public class MixinMinecraftClient {
 
     @Inject(method = "run", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/profiler/Recorder;startTick()V"))
     public void run(CallbackInfo ci) {
-        ModTemplate.LOGGER.info("Tick");
+       // ModTemplate.LOGGER.info("Tick");
     }
 
 }
