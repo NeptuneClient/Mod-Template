@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "modtemplate",
+	"version": "${version}",
+	"name": "ModTemplate",
+	"authors": [
+		"Me!"
+	],
+	"icon": "assets/modtemplate/icon.png",
+	"entrypoints": {
+		"main": [
+			"net.fabricmc.template.ModTemplate"
+		]
+	},
+	"mixins": [
+		"modtemplate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
