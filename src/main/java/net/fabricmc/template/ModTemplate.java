@@ -6,10 +6,12 @@ import org.slf4j.LoggerFactory;
 
 public class ModTemplate implements ModInitializer {
 
-    public static final Logger LOGGER = LoggerFactory.getLogger("modtemplate");
+    @Getter
+    private static Logger logger = LoggerFactory.getLogger("TestMod");
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Hello Fabric world!");
+        logger.info("Mod started");
     }
+    
 }
